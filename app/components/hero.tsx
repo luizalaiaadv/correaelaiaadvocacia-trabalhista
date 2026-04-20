@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { MessageCircle } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
 export const Hero = () => {
@@ -52,6 +53,7 @@ export const Hero = () => {
                 aria-label="Falar agora com um advogado no WhatsApp"
               >
                 FALE COM UM ADVOGADO
+                <MessageCircle size={20} fill="currentColor" />
               </a>
               <a
                 href="#servicos"
