@@ -1,3 +1,4 @@
+import { MessageCircle } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
 export const PricingSection = () => {
@@ -23,10 +24,11 @@ export const PricingSection = () => {
               href="https://wa.me/5531999471983?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-full shadow-lg hover:bg-white/90 transition-all focus:ring-4 focus:ring-white/20 outline-none animate-whatsapp-brown"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-full shadow-lg hover:bg-white/90 transition-all focus:ring-4 focus:ring-white/20 outline-none animate-whatsapp-white"
               aria-label="Falar agora com um advogado no WhatsApp"
             >
               FALE COM UM ADVOGADO
+              <MessageCircle size={20} fill="currentColor" />
             </a>
             <p className="text-sm opacity-70 italic">
               Primeira consulta para análise de viabilidade gratuita.

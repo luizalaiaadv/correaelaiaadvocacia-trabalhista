@@ -1,4 +1,4 @@
-import { MessageSquare, Calendar, Scale, CheckCircle } from 'lucide-react';
+import { MessageSquare, Calendar, Scale, CheckCircle, MessageCircle } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
 export const HowItWorks = () => {
@@ -82,6 +82,7 @@ export const HowItWorks = () => {
             aria-label="Falar agora com um advogado no WhatsApp"
           >
             FALE COM UM ADVOGADO
+            <MessageCircle size={20} fill="currentColor" />
           </a>
         </FadeIn>
       </div>

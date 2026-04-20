@@ -57,10 +57,29 @@
   }
 }
 
+@keyframes pulse-whatsapp-white {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 .animate-whatsapp {
   animation: pulse-whatsapp 3s infinite;
 }
 
 .animate-whatsapp-brown {
   animation: pulse-whatsapp-brown 3s infinite;
+}
+
+.animate-whatsapp-white {
+  animation: pulse-whatsapp-white 3s infinite;
 }
