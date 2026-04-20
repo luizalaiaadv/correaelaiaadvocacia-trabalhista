@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "rgba",
     "typebot"
   ],
   "tailwindCSS.experimental.configFile": "app/globals.css",

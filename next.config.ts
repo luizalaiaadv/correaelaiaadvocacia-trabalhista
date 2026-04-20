@@ -10,13 +10,12 @@ const config: NextConfig = {
         pathname: '/**',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
-    qualities: [75, 85],
+    formats: ['image/webp'],
+    qualities: [75],
     minimumCacheTTL: 31536000,
   },
   experimental: {
-    optimizePackageImports: ['motion', 'lucide-react', '@typebot.io/react'],
-    optimizeCss: true,
+    optimizePackageImports: ['motion', 'lucide-react'],
   },
 };
 

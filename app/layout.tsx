@@ -41,12 +41,12 @@ export const metadata: Metadata = {
     title: 'Correa & Laia Advocacia | Advogado Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
-    url: 'https://www.correaelaiaadvocacia.com/trabalhista',
+    url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
     siteName: 'Correa & Laia Advocacia',
     locale: 'pt_BR',
     images: [
       {
-        url: 'https://www.correaelaiaadvocacia.com/trabalhista/luizas.webp',
+        url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
         width: 341,
         height: 512,
         alt: 'Dra. Luiza Laia e Dra. Luiza Corrêa - Correa & Laia Advocacia',
@@ -58,10 +58,12 @@ export const metadata: Metadata = {
     title: 'Correa & Laia Advocacia | Advogado Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
-    images: ['https://www.correaelaiaadvocacia.com/trabalhista/luizas.webp'],
+    images: [
+      'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
+    ],
   },
   alternates: {
-    canonical: 'https://www.correaelaiaadvocacia.com/trabalhista',
+    canonical: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
   },
 };
 
@@ -75,9 +77,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://typebot.io" />
-        <link rel="dns-prefetch" href="https://typebot.io" />
-        <link rel="preconnect" href="https://lh3.googleusercontent.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://lh3.googleusercontent.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
 
         {/* Schema JSON-LD: LocalBusiness + LegalService */}
@@ -90,9 +94,10 @@ export default function RootLayout({
               name: 'Correa & Laia Advocacia',
               description:
                 'Escritório de advocacia trabalhista em Belo Horizonte especializado em defender os direitos de trabalhadores em MG.',
-              url: 'https://www.correaelaiaadvocacia.com/trabalhista',
-              image: 'https://www.correaelaiaadvocacia.com/trabalhista/luizas.webp',
-              logo: 'https://www.correaelaiaadvocacia.com/logo.webp',
+              url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
+              image:
+                'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
+              logo: 'https://www.trabalhista.correaelaiaadvocacia.com/logo.webp',
               telephone: '+55-31-99947-1983',
               email: 'contato@correalaiadvocacia.com.br',
               address: {
@@ -205,7 +210,7 @@ export default function RootLayout({
                 worksFor: {
                   '@type': 'LegalService',
                   name: 'Correa & Laia Advocacia',
-                  url: 'https://www.correaelaiaadvocacia.com/trabalhista',
+                  url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
                 },
                 address: {
                   '@type': 'PostalAddress',
@@ -226,7 +231,7 @@ export default function RootLayout({
                 worksFor: {
                   '@type': 'LegalService',
                   name: 'Correa & Laia Advocacia',
-                  url: 'https://www.correaelaiaadvocacia.com/trabalhista',
+                  url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
                 },
                 address: {
                   '@type': 'PostalAddress',
