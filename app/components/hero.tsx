@@ -44,7 +44,7 @@ export const Hero = () => {
           </FadeIn>
 
           <FadeIn delay={0.6}>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <a
                 href={whatsappUrl}
                 target="_blank"

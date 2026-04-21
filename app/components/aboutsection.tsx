@@ -44,17 +44,18 @@ export const AboutSection = () => {
             className="space-y-6 text-brand/70 leading-relaxed"
           >
             <p>
-              Dra. Luiza Laia é graduada em Direito pela Pontificia Universidade
-              Católica de Minas Gerais – PUC Minas – em 2020 e Pós Graduada em
-              Direito Processual Trabalhista pela ESA/OAB. Possui grande
-              experiência na área do direito trabalhista e privado através de
-              uma advocacia artesanal, visando uma justiça efetiva e rápida.
+              <strong>Dra. Luiza Laia</strong> é graduada em Direito pela
+              Pontificia Universidade Católica de Minas Gerais – PUC Minas – em
+              2020 e Pós Graduada em Direito Processual Trabalhista pela
+              ESA/OAB. Possui grande experiência na área do direito trabalhista
+              e privado através de uma advocacia artesanal, visando uma justiça
+              efetiva e rápida.
             </p>
             <p>
-              Dra. Luiza Corrêa é graduada em Direito pela Universidade Salgado
-              de Oliveira – em 2013 e Pós-Graduanda em Holding e Proteção
-              Patrimônio – Família e Empresa. Possui experiência em Direito
-              Cívil na área de Contratos e Sucessões.
+              <strong>Dra. Luiza Corrêa</strong> é graduada em Direito pela
+              Universidade Salgado de Oliveira – em 2013 e Pós-Graduanda em
+              Holding e Proteção Patrimônio – Família e Empresa. Possui
+              experiência em Direito Cívil na área de Contratos e Sucessões.
             </p>
             <p>
               Juntas, construímos um escritório pautado pela excelência, ética e
