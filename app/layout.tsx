@@ -381,7 +381,7 @@ export default function RootLayout({
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KFXXZS4M"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NC2RRJVR"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
