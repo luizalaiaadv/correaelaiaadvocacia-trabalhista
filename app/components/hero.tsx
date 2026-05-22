@@ -13,7 +13,7 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/public/download.webp"
+          src="/download.webp"
           alt="Construção Civil"
           fill
           priority
