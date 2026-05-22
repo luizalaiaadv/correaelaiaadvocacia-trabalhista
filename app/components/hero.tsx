@@ -46,7 +46,6 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <a
                 href={whatsappUrl}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-all focus:ring-4 focus:ring-primary/20 outline-none animate-whatsapp-brown"
                 aria-label="Falar agora com um advogado no WhatsApp"

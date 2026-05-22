@@ -51,8 +51,8 @@ export const LocationSection = () => {
               <a
                 aria-label="Instagram Correa & Laia Advocacia"
                 href="https://www.instagram.com/correaelaia.advocacia"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="w-10 h-10 bg-brand text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Instagram size={20} />
@@ -60,8 +60,8 @@ export const LocationSection = () => {
               <a
                 aria-label="Facebook Correa & Laia Advocacia"
                 href="https://www.facebook.com/profile.php?id=61568707289617"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="w-10 h-10 bg-brand text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook size={20} />

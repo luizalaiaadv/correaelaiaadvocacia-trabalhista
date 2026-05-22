@@ -88,7 +88,6 @@ export const Testimonials = () => {
                     <a
                       aria-label={item.arialabel}
                       href={item.href}
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <ExternalLinkIcon

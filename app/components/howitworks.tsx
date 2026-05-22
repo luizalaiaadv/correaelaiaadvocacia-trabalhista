@@ -82,7 +82,6 @@ export const HowItWorks = () => {
         <FadeIn>
           <a
             href="https://wa.me/5531999471983?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria."
-            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-all focus:ring-4 focus:ring-primary/20 outline-none animate-whatsapp-brown"
             aria-label="Falar agora com um advogado no WhatsApp"
