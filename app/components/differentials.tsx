@@ -30,14 +30,14 @@ export const Differentials = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="py-12 md:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="space-y-8">
           <FadeIn>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Diferenciais
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               POR QUE ESCOLHER O NOSSO ESCRITÓRIO?
             </h3>
           </FadeIn>

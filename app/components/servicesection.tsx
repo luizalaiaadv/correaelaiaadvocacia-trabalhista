@@ -73,7 +73,7 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-[#fdfcfb]">
+    <section id="servicos" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <FadeIn>
@@ -116,7 +116,7 @@ export const ServicesSection = () => {
                   },
                 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="block h-full p-8 bg-white border border-gray-100 rounded-2xl transition-colors hover:border-primary/20"
+                className="block h-full p-6 md:p-8 bg-white border border-gray-100 rounded-2xl transition-colors hover:border-primary/20"
               >
                 <motion.div
                   variants={{

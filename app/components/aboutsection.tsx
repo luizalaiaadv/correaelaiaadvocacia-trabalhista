@@ -3,8 +3,8 @@ import { FadeIn } from './fade-in';
 
 export const AboutSection = () => {
   return (
-    <section id="sobre" className="py-20 bg-[#fdfcfb]">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section id="sobre" className="py-12 md:py-20 bg-[#fdfcfb]">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <FadeIn className="order-2 lg:order-1">
           <div className="relative max-w-md mx-auto lg:mx-0">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-4/5">
@@ -33,7 +33,7 @@ export const AboutSection = () => {
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Sobre as Especialistas
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               Correa & Laia Advocacia
             </h3>
             <p className="text-primary font-semibold mt-2">OAB/MG 212.802</p>

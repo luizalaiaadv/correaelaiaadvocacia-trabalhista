@@ -3,7 +3,7 @@ import { FadeIn } from './fade-in';
 
 export const PricingSection = () => {
   return (
-    <section className="py-20 bg-primary text-white relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-primary text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
         <div className="absolute -top-20 -left-20 w-80 h-80 bg-white rounded-full blur-3xl" />
         <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-white rounded-full blur-3xl" />
@@ -11,10 +11,10 @@ export const PricingSection = () => {
 
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <FadeIn>
-          <h2 className="text-3xl md:text-5xl font-bold mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 md:mb-8">
             VAMOS AGENDAR SEU ATENDIMENTO?
           </h2>
-          <p className="text-lg md:text-xl opacity-90 mb-12 leading-relaxed">
+          <p className="text-base md:text-xl opacity-90 mb-8 md:mb-12 leading-relaxed">
             Estamos aqui para simplificar sua jornada e encontrar a melhor
             solução para o seu caso. Nossa equipe oferece atendimento humanizado
             e eficiente, sempre respeitando sua individualidade.

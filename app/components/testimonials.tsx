@@ -31,20 +31,20 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-[#fdfcfb]">
+    <section id="depoimentos" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-20">
           <FadeIn>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Feedbacks
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               O QUE DIZEM NOSSOS CLIENTES
             </h3>
           </FadeIn>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-10 lg:gap-12">
           {testimonials.map((item, index) => (
             <FadeIn
               key={index}

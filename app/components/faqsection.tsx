@@ -57,14 +57,14 @@ export const FaqSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-[#fdfcfb]">
+    <section id="faq" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <FadeIn>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Dúvidas
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               PERGUNTAS FREQUENTES
             </h3>
           </FadeIn>

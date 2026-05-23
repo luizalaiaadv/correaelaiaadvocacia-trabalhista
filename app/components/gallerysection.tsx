@@ -5,14 +5,14 @@ export const GallerySection = () => {
   const images = ['/img1.webp', '/img2.webp', '/img3.webp', '/img4.webp'];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <FadeIn>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Ambiente
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               NOSSO ESCRITÓRIO
             </h3>
           </FadeIn>

@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden"
+      className="relative min-h-[80vh] md:min-h-[90vh] flex items-center pt-20 overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -26,9 +26,9 @@ export const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 w-full z-10">
-        <div className="max-w-2xl space-y-8">
+        <div className="max-w-2xl space-y-6 md:space-y-8">
           <FadeIn delay={0.2}>
-            <h1 className="text-3xl md:text-5xl font-normal text-brand leading-[1.2] uppercase tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-normal text-brand leading-[1.2] uppercase tracking-tight">
               ADVOGADO TRABALHISTA <br />
               EM <span className="font-bold text-primary">BELO HORIZONTE</span>
             </h1>

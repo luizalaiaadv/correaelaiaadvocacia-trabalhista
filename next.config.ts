@@ -1,7 +1,8 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from 'next/dist/server/config';
 
 const config: NextConfig = {
   turbopack: {},
+  allowedDevOrigins: ['192.168.0.229'],
   images: {
     remotePatterns: [
       {

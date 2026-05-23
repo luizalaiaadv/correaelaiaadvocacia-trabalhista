@@ -36,14 +36,14 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-12 md:py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <FadeIn>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Processo
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand mt-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
               COMO FUNCIONA O ATENDIMENTO?
             </h3>
           </FadeIn>
@@ -51,7 +51,7 @@ export const HowItWorks = () => {
 
         <div className="relative">
           <div className="absolute top-1/2 left-0 w-full h-0.5 bg-accent hidden lg:block -translate-y-1/2" />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 relative z-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 relative z-10">
             {steps.map((step, index) => (
               <FadeIn
                 key={index}
