@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     'Luiza Laia',
     'Luiza Correa',
     'Verbas Rescisórias',
+    'Correa e Laia Advocacia',
     'FGTS',
     'Horas Extras',
   ],
