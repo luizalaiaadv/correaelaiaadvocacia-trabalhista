@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next/dist/server/config';
+import type { NextConfig } from 'next';
 
 const config: NextConfig = {
   turbopack: {},
