@@ -124,35 +124,33 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden border-t grid transition-all duration-300 ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
           isMobileMenuOpen
-            ? 'grid-rows-[1fr] opacity-100'
-            : 'grid-rows-[0fr] opacity-0'
+            ? 'max-h-[500px] opacity-100'
+            : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="overflow-hidden">
-          <div className="flex flex-col p-6 gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={cn(
-                  'relative font-medium transition-colors py-2 pl-4',
-                  activeSection === link.id
-                    ? 'text-primary bg-primary/5'
-                    : 'text-brand',
-                )}
-              >
-                <span
-                  className={`absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r transition-opacity duration-200 ${
-                    activeSection === link.id ? 'opacity-100' : 'opacity-0'
-                  }`}
-                />
-                {link.name}
-              </Link>
-            ))}
-          </div>
+        <div className="border-t flex flex-col p-6 gap-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={cn(
+                'relative font-medium transition-colors py-2 pl-4',
+                activeSection === link.id
+                  ? 'text-primary bg-primary/5'
+                  : 'text-brand',
+              )}
+            >
+              <span
+                className={`absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r transition-opacity duration-200 ${
+                  activeSection === link.id ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+              {link.name}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
