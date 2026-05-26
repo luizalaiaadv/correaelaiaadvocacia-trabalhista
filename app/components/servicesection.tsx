@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'motion/react';
 import {
   Briefcase,
   FileText,
@@ -97,43 +96,17 @@ export const ServicesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {services.map((service, index) => (
             <FadeIn key={index} delay={index * 0.05} className="group">
-              <motion.div
-                whileHover="hover"
-                initial="initial"
-                variants={{
-                  initial: {
-                    y: 0,
-                    scale: 1,
-                    boxShadow:
-                      '0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4)',
-                    borderColor: 'rgba(243, 244, 246, 1)',
-                  },
-                  hover: {
-                    y: -12,
-                    scale: 1.03,
-                    boxShadow: '0 25px 50px -12px rgba(130, 70, 50, 0.2)',
-                    borderColor: 'rgba(130, 70, 50, 0.3)',
-                  },
-                }}
-                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="block h-full p-6 md:p-8 bg-white border border-gray-100 rounded-2xl transition-colors hover:border-primary/20"
-              >
-                <motion.div
-                  variants={{
-                    initial: { scale: 1, rotate: 0 },
-                    hover: { scale: 1.1, rotate: 5 },
-                  }}
-                  className="w-14 h-14 bg-accent/50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300"
-                >
+              <div className="block h-full p-6 md:p-8 bg-white border border-gray-100 rounded-2xl transition-all duration-300 ease-out shadow-[0_4px_6px_-1px_rgb(0_0_0/0.4),0_2px_4px_-2px_rgb(0_0_0/0.4)] hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_25px_50px_-12px_rgba(130,70,50,0.2)] hover:border-primary/30">
+                <div className="w-14 h-14 bg-accent/50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
                   <service.icon size={28} />
-                </motion.div>
+                </div>
                 <h4 className="text-xl font-bold text-brand mb-3 leading-tight">
                   {service.title}
                 </h4>
                 <p className="text-brand/60 text-sm leading-relaxed">
                   {service.description}
                 </p>
-              </motion.div>
+              </div>
             </FadeIn>
           ))}
         </div>

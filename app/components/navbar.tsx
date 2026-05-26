@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -103,13 +102,11 @@ export const Navbar = () => {
               )}
             >
               {link.name}
-              {activeSection === link.id && (
-                <motion.div
-                  layoutId="activeNav"
-                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
-                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                />
-              )}
+              <span
+                className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full transition-opacity duration-200 ${
+                  activeSection === link.id ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
             </Link>
           ))}
         </div>
@@ -126,45 +123,38 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t overflow-hidden"
-          >
-            <div className="flex flex-col p-6 gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={cn(
-                    'relative font-medium transition-colors py-2 pl-4',
-                    activeSection === link.id
-                      ? 'text-primary bg-primary/5'
-                      : 'text-brand',
-                  )}
-                >
-                  {activeSection === link.id && (
-                    <motion.div
-                      layoutId="activeNavMobile"
-                      className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r"
-                      transition={{
-                        type: 'spring',
-                        stiffness: 380,
-                        damping: 30,
-                      }}
-                    />
-                  )}
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        className={`md:hidden border-t grid transition-all duration-300 ${
+          isMobileMenuOpen
+            ? 'grid-rows-[1fr] opacity-100'
+            : 'grid-rows-[0fr] opacity-0'
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="flex flex-col p-6 gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={cn(
+                  'relative font-medium transition-colors py-2 pl-4',
+                  activeSection === link.id
+                    ? 'text-primary bg-primary/5'
+                    : 'text-brand',
+                )}
+              >
+                <span
+                  className={`absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r transition-opacity duration-200 ${
+                    activeSection === link.id ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };

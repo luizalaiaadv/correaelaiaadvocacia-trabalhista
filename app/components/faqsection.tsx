@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
@@ -86,20 +85,19 @@ export const FaqSection = () => {
                     className={`text-primary transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
                   />
                 </button>
-                <AnimatePresence>
-                  {activeIndex === index && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="p-6 pt-0 text-brand/70 text-sm leading-relaxed border-t border-gray-50">
-                        {faq.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div
+                  className={`grid transition-all duration-300 ${
+                    activeIndex === index
+                      ? 'grid-rows-[1fr] opacity-100'
+                      : 'grid-rows-[0fr] opacity-0'
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="p-6 pt-0 text-brand/70 text-sm leading-relaxed border-t border-gray-50">
+                      {faq.answer}
+                    </div>
+                  </div>
+                </div>
               </div>
             </FadeIn>
           ))}
