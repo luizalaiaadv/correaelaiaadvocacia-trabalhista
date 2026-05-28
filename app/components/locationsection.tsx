@@ -1,6 +1,5 @@
 import { MapPin, Phone } from 'lucide-react';
-import Link from 'next/link';
-import { FadeIn } from './fade-in';
+import { PhoneLink } from './whatsapp-link';
 
 const InstagramIcon = ({ size = 20 }: { size?: number }) => (
   <svg
@@ -60,17 +59,17 @@ export const LocationSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
           <div className="space-y-10">
-            <FadeIn>
+            <div>
               <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
                 Onde Estamos
               </h2>
               <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
                 VENHA NOS VISITAR
               </h3>
-            </FadeIn>
+            </div>
 
             <div className="space-y-8">
-              <FadeIn delay={0.2} className="flex items-start gap-4">
+              <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-accent/50 rounded-xl flex items-center justify-center text-primary shrink-0">
                   <MapPin size={24} />
                 </div>
@@ -82,24 +81,24 @@ export const LocationSection = () => {
                     Belo Horizonte - MG, 30140-069
                   </p>
                 </div>
-              </FadeIn>
+              </div>
 
-              <FadeIn delay={0.3} className="flex items-start gap-4">
+              <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-accent/50 rounded-xl flex items-center justify-center text-primary shrink-0">
                   <Phone size={24} />
                 </div>
                 <div>
                   <div className="font-bold text-brand text-lg">Contato</div>
                   <p className="text-brand/60 leading-relaxed">
-                    (31) 99947-1983
+                    <PhoneLink className="hover:text-primary transition-colors">(31) 99947-1983</PhoneLink>
                     <br />
-                    contato@correalaiadvocacia.com.br
+                    <a href="mailto:contato@correalaiadvocacia.com.br" className="hover:text-primary transition-colors">contato@correalaiadvocacia.com.br</a>
                   </p>
                 </div>
-              </FadeIn>
+              </div>
             </div>
 
-            <FadeIn delay={0.4} className="flex gap-4">
+            <div className="flex gap-4">
               <a
                 aria-label="Instagram Correa & Laia Advocacia"
                 href="https://www.instagram.com/correaelaia.advocacia"
@@ -127,13 +126,10 @@ export const LocationSection = () => {
               >
                 <LinkedinIcon size={20} />
               </a>
-            </FadeIn>
+            </div>
           </div>
 
-          <FadeIn
-            delay={0.4}
-            className="h-72 sm:h-80 md:h-96 lg:h-112.5 rounded-3xl overflow-hidden shadow-2xl border border-gray-100"
-          >
+          <div className="h-72 sm:h-80 md:h-96 lg:h-112.5 rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.961017316925!2d-43.941071!3d-19.9260475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x223d422b6a4636ad%3A0x4ea4be78ddb98723!2sCorrea%20%26%20Laia%20Advocacia!5e0!3m2!1spt-BR!2sbr!4v1776091683706!5m2!1spt-BR!2sbr"
               width="100%"
@@ -144,7 +140,7 @@ export const LocationSection = () => {
               referrerPolicy="no-referrer-when-downgrade"
               aria-label="Google Maps localização Correa & Laia Advocacia"
             />
-          </FadeIn>
+          </div>
         </div>
       </div>
     </section>

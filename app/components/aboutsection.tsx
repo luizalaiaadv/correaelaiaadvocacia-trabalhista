@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import { FadeIn } from './fade-in';
 
 export const AboutSection = () => {
   return (
     <section id="sobre" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <FadeIn className="order-2 lg:order-1">
+        <div className="order-2 lg:order-1">
           <div className="relative max-w-md mx-auto lg:mx-0">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-4/5">
               <Image
@@ -26,10 +25,10 @@ export const AboutSection = () => {
               </div>
             </div>
           </div>
-        </FadeIn>
+        </div>
 
         <div className="space-y-8 order-1 lg:order-2">
-          <FadeIn>
+          <div>
             <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
               Sobre as Especialistas
             </h2>
@@ -37,12 +36,9 @@ export const AboutSection = () => {
               Correa & Laia Advocacia
             </h3>
             <p className="text-primary font-semibold mt-2">OAB/MG 212.802</p>
-          </FadeIn>
+          </div>
 
-          <FadeIn
-            delay={0.2}
-            className="space-y-6 text-brand/70 leading-relaxed"
-          >
+          <div className="space-y-6 text-brand/70 leading-relaxed">
             <p>
               <strong>Dra. Luiza Laia</strong> é graduada em Direito pela
               Pontificia Universidade Católica de Minas Gerais – PUC Minas – em
@@ -62,7 +58,7 @@ export const AboutSection = () => {
               respeito, pronto para oferecer soluções jurídicas que fazem a
               diferença.
             </p>
-          </FadeIn>
+          </div>
         </div>
       </div>
     </section>

@@ -114,8 +114,10 @@ export const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           id="button-menu"
-          aria-label="Button menu"
-          className="md:hidden text-brand"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded={isMobileMenuOpen ? 'true' : 'false'}
+          className="md:hidden flex items-center justify-center text-brand cursor-pointer p-2 -mr-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -125,12 +127,10 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isMobileMenuOpen
-            ? 'max-h-[500px] opacity-100'
-            : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="border-t flex flex-col p-6 gap-4">
+        <div className="bg-white/95 backdrop-blur-md border-t flex flex-col p-6 gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}

@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { FadeIn } from './fade-in';
 
 export const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -59,47 +58,43 @@ export const FaqSection = () => {
     <section id="faq" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-10 md:mb-16">
-          <FadeIn>
-            <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
-              Dúvidas
-            </h2>
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
-              PERGUNTAS FREQUENTES
-            </h3>
-          </FadeIn>
+          <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
+            Dúvidas
+          </h2>
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
+            PERGUNTAS FREQUENTES
+          </h3>
         </div>
 
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <FadeIn key={index} delay={index * 0.05}>
-              <div className="border border-gray-100 bg-white rounded-2xl overflow-hidden shadow-xl/20">
-                <button
-                  onClick={() =>
-                    setActiveIndex(activeIndex === index ? null : index)
-                  }
-                  className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors"
-                >
-                  <span className="font-bold text-brand">{faq.question}</span>
-                  <ChevronDown
-                    size={20}
-                    className={`text-primary transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
-                  />
-                </button>
-                <div
-                  className={`grid transition-all duration-300 ${
-                    activeIndex === index
-                      ? 'grid-rows-[1fr] opacity-100'
-                      : 'grid-rows-[0fr] opacity-0'
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="p-6 pt-0 text-brand/70 text-sm leading-relaxed border-t border-gray-50">
-                      {faq.answer}
-                    </div>
+            <div key={index} className="border border-gray-100 bg-white rounded-2xl overflow-hidden shadow-xl/20">
+              <button
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
+                className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors"
+              >
+                <span className="font-bold text-brand">{faq.question}</span>
+                <ChevronDown
+                  size={20}
+                  className={`text-primary transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                />
+              </button>
+              <div
+                className={`grid transition-all duration-300 ${
+                  activeIndex === index
+                    ? 'grid-rows-[1fr] opacity-100'
+                    : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="p-6 pt-0 text-brand/70 text-sm leading-relaxed border-t border-gray-50">
+                    {faq.answer}
                   </div>
                 </div>
               </div>
-            </FadeIn>
+            </div>
           ))}
         </div>
       </div>

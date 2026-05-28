@@ -1,6 +1,5 @@
 import { Star, Quote, ExternalLinkIcon } from 'lucide-react';
 import Image from 'next/image';
-import { FadeIn } from './fade-in';
 
 export const Testimonials = () => {
   const testimonials = [
@@ -34,22 +33,19 @@ export const Testimonials = () => {
     <section id="depoimentos" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-20">
-          <FadeIn>
-            <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
-              Feedbacks
-            </h2>
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
-              O QUE DIZEM NOSSOS CLIENTES
-            </h3>
-          </FadeIn>
+          <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
+            Feedbacks
+          </h2>
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand mt-4">
+            O QUE DIZEM NOSSOS CLIENTES
+          </h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-10 lg:gap-12">
           {testimonials.map((item, index) => (
-            <FadeIn
+            <div
               key={index}
-              delay={index * 0.1}
-              className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative group hover:shadow-xl transition-shadow"
+              className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative"
             >
               <div className="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg">
                 <Quote size={20} />
@@ -70,7 +66,7 @@ export const Testimonials = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.name}
@@ -98,7 +94,7 @@ export const Testimonials = () => {
                   </div>
                 </div>
               </div>
-            </FadeIn>
+            </div>
           ))}
         </div>
       </div>

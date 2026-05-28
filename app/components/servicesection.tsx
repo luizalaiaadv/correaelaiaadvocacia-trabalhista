@@ -1,5 +1,3 @@
-'use client';
-
 import {
   Briefcase,
   FileText,
@@ -11,7 +9,6 @@ import {
   UserPlus,
   Stethoscope,
 } from 'lucide-react';
-import { FadeIn } from './fade-in';
 
 export const ServicesSection = () => {
   const services = [
@@ -75,29 +72,23 @@ export const ServicesSection = () => {
     <section id="servicos" className="py-12 md:py-20 bg-[#fdfcfb]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-          <FadeIn>
-            <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
-              Nosso Advogado Trabalhista
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand">
-              COMO PODEMOS TE AJUDAR?
-            </h3>
-          </FadeIn>
-          <FadeIn delay={0.4}>
-            <p className="text-brand/60">
-              Especialistas prontos para defender seus direitos com excelência e
-              dedicação.
-            </p>
-          </FadeIn>
+          <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
+            Nosso Advogado Trabalhista
+          </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-brand">
+            COMO PODEMOS TE AJUDAR?
+          </h3>
+          <p className="text-brand/60">
+            Especialistas prontos para defender seus direitos com excelência e
+            dedicação.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {services.map((service, index) => (
-            <FadeIn key={index} delay={index * 0.05} className="group">
-              <div className="block h-full p-6 md:p-8 bg-white border border-gray-100 rounded-2xl transition-all duration-300 ease-out shadow-[0_4px_6px_-1px_rgb(0_0_0/0.4),0_2px_4px_-2px_rgb(0_0_0/0.4)] hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_25px_50px_-12px_rgba(130,70,50,0.2)] hover:border-primary/30">
-                <div className="w-14 h-14 bg-accent/50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-[5deg]">
+            <div key={index}>
+              <div className="block h-full p-6 md:p-8 bg-white border border-gray-100 rounded-2xl shadow-[0_4px_6px_-1px_rgb(0_0_0/0.4),0_2px_4px_-2px_rgb(0_0_0/0.4)]">
+                <div className="w-14 h-14 bg-accent/50 rounded-xl flex items-center justify-center text-primary mb-6">
                   <service.icon size={28} />
                 </div>
                 <h4 className="text-xl font-bold text-brand mb-3 leading-tight">
@@ -107,7 +98,7 @@ export const ServicesSection = () => {
                   {service.description}
                 </p>
               </div>
-            </FadeIn>
+            </div>
           ))}
         </div>
       </div>

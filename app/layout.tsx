@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cinzel, Montserrat } from 'next/font/google';
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
+import { TrackingInit } from './components/tracking-init';
 import './globals.css';
 
 const cinzel = Cinzel({
@@ -388,6 +389,7 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        <TrackingInit />
         {children}
         <Analytics />
         <Script
