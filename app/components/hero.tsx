@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { CheckCircle2 } from 'lucide-react';
 import { WhatsAppLink } from './whatsapp-link';
 
 export const Hero = () => {
@@ -38,13 +39,28 @@ export const Hero = () => {
             para você.
           </p>
 
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+              Sem pagamento adiantado
+            </span>
+            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+              Referências de clientes satisfeitos
+            </span>
+            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+              Atendimento online ou presencial
+            </span>
+          </div>
+
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <WhatsAppLink
                 message="Olá! Vi o anúncio e gostaria de uma consulta GRATUITA sobre meus direitos trabalhistas."
                 label="hero_cta"
                 ariaLabel="Falar agora com um advogado no WhatsApp"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-all focus:ring-4 focus:ring-primary/20 outline-none animate-whatsapp-brown"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-all focus:ring-4 focus:ring-primary/20 outline-none animate-whatsapp-brown"
               >
                 FALE COM UM ADVOGADO
               </WhatsAppLink>

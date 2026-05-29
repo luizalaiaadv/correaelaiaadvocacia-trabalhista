@@ -3,7 +3,10 @@ export const StatsSection = () => {
     { label: 'Anos de Atuação', value: '+13' },
     { label: 'Clientes Ativos', value: '+300' },
     { label: 'Ações Protocoladas', value: '+700' },
-    { label: 'Avaliações no Google', value: '5.0' },
+    {
+      label: 'Avaliações no Google',
+      value: '⭐ 5.0',
+    },
   ];
 
   return (
@@ -12,9 +15,23 @@ export const StatsSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-20">
           {stats.map((stat, index) => (
             <div key={index} className="text-center space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary font-display">
-                {stat.value}
-              </div>
+              {stat.value ? (
+                <a
+                  href="https://maps.app.goo.gl/KqBN7nCXGEJ9BDyg6"
+                  style={{
+                    textDecoration: 'none',
+                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-4xl md:text-5xl font-bold text-primary font-display hover:underline underline-offset-4"
+                >
+                  {stat.value}
+                </a>
+              ) : (
+                <div className="text-4xl md:text-5xl font-bold text-primary font-display">
+                  {stat.value}
+                </div>
+              )}
               <div className="text-sm font-semibold text-brand/60 uppercase tracking-widest">
                 {stat.label}
               </div>

@@ -1,3 +1,5 @@
+import { getTrackingParams } from '@/lib/tracking';
+
 const PHONE = '5531999471983';
 
 const WhatsAppSvg = ({ size = 20 }: { size?: number }) => (
@@ -29,7 +31,11 @@ export const WhatsAppLink = ({
   iconSize = 20,
   children,
 }: WhatsAppLinkProps) => {
-  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
+  const trackingParams = getTrackingParams();
+  const trackingString = new URLSearchParams(
+    trackingParams as Record<string, string>
+  ).toString();
+  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}${trackingString ? `&${trackingString}` : ''}`;
 
   return (
     <a

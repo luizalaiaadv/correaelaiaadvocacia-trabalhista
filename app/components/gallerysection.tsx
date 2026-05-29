@@ -1,7 +1,12 @@
 import Image from 'next/image';
 
 export const GallerySection = () => {
-  const images = ['/img1.webp', '/img2.webp', '/img3.webp', '/img4.webp'];
+  const images = [
+    { src: '/img1.webp', alt: 'Recepção do escritório Correa & Laia Advocacia em Belo Horizonte' },
+    { src: '/img2.webp', alt: 'Sala de reunião para atendimento trabalhista em BH' },
+    { src: '/img3.webp', alt: 'Escritório de advocacia trabalhista no bairro Lourdes, BH' },
+    { src: '/img4.webp', alt: 'Ambiente do escritório Correa & Laia Advocacia' },
+  ];
 
   return (
     <section className="py-12 md:py-20 bg-white">
@@ -16,14 +21,14 @@ export const GallerySection = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          {images.map((src, index) => (
+          {images.map((img, index) => (
             <div
               key={index}
               className="relative overflow-hidden rounded-2xl aspect-square"
             >
               <Image
-                src={src}
-                alt={`Escritório ${index + 1}`}
+                src={img.src}
+                alt={img.alt}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
