@@ -19,10 +19,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "Link",
-          "value": "</_next/image?url=%2Fdownload.webp&w=1280&q=75>; rel=preload; as=image; fetchpriority=high"
         }
       ]
     },
