@@ -80,7 +80,6 @@ export default function RootLayout({
         <link href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link
-          rel="preconnect"
           href="https://lh3.googleusercontent.com"
           crossOrigin="anonymous"
         />

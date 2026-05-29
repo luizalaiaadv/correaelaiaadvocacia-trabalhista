@@ -53,7 +53,6 @@ SCORE GERAL:      █████████░  69/100
 - GTM carregado `afterInteractive` (não bloqueia render) ✅
 - Hero image com `priority` + `fetchPriority="high"` ✅
 - `sizes="100vw"` na hero image (corrigido) ✅
-- Preconnect para GTM e Google User Content ✅
 
 ### Problemas
 
