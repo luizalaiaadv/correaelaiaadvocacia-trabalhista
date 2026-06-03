@@ -75,7 +75,7 @@ export const LocationSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-brand text-lg">Endereço</div>
-                  <p className="text-brand/60 leading-relaxed">
+                  <p className="text-brand font-medium leading-relaxed">
                     Rua dos Timbiras, 1940 - Lourdes
                     <br />
                     Belo Horizonte - MG, 30140-069
@@ -89,10 +89,17 @@ export const LocationSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-brand text-lg">Contato</div>
-                  <p className="text-brand/60 leading-relaxed">
-                    <PhoneLink className="hover:text-primary transition-colors">(31) 99947-1983</PhoneLink>
+                  <p className="text-brand font-medium leading-relaxed">
+                    <PhoneLink className="hover:text-primary transition-colors">
+                      (31) 99947-1983
+                    </PhoneLink>
                     <br />
-                    <a href="mailto:contato@correalaiadvocacia.com.br" className="hover:text-primary transition-colors">contato@correalaiadvocacia.com.br</a>
+                    <a
+                      href="mailto:contato@correalaiadvocacia.com.br"
+                      className="hover:text-primary transition-colors"
+                    >
+                      contato@correalaiadvocacia.com.br
+                    </a>
                   </p>
                 </div>
               </div>

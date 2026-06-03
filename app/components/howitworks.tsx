@@ -51,7 +51,9 @@ export const HowItWorks = () => {
                 </div>
                 <div className="space-y-3">
                   <h4 className="text-xl font-bold text-brand">{step.title}</h4>
-                  <p className="text-brand/60 text-sm leading-relaxed">{step.description}</p>
+                  <p className="text-brand font-medium text-sm leading-relaxed">
+                    {step.description}
+                  </p>
                 </div>
               </div>
             ))}

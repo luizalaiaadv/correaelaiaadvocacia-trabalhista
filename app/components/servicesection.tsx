@@ -14,56 +14,47 @@ export const ServicesSection = () => {
   const services = [
     {
       title: 'Pejotização / Vínculo Empregatício',
-      description:
-        'Reconhecimento de vínculo para quem trabalha como PJ mas possui subordinação.',
+      description: 'Reconhecimento de vínculo para quem trabalha como PJ mas possui subordinação.',
       icon: UserPlus,
     },
     {
       title: 'Cálculo de Verbas Rescisórias',
-      description:
-        'Análise detalhada se todos os seus direitos foram pagos na demissão.',
+      description: 'Análise detalhada se todos os seus direitos foram pagos na demissão.',
       icon: FileText,
     },
     {
       title: 'Aviso Prévio / Demissão',
-      description:
-        'Orientação completa sobre demissões sem justa causa ou pedidos de demissão.',
+      description: 'Orientação completa sobre demissões sem justa causa ou pedidos de demissão.',
       icon: Briefcase,
     },
     {
       title: 'Acúmulo e Desvio de Função',
-      description:
-        'Se você faz mais do que foi contratado, tem direito a compensação.',
+      description: 'Se você faz mais do que foi contratado, tem direito a compensação.',
       icon: TrendingUp,
     },
     {
       title: 'Rescisão Indireta / Indevida',
-      description:
-        'Quando a empresa descumpre o contrato, você pode pedir demissão com direitos.',
+      description: 'Quando a empresa descumpre o contrato, você pode pedir demissão com direitos.',
       icon: ShieldAlert,
     },
     {
       title: 'Assédio Moral e Sexual',
-      description:
-        'Defesa rigorosa contra abusos e situações constrangedoras no trabalho.',
+      description: 'Defesa rigorosa contra abusos e situações constrangedoras no trabalho.',
       icon: AlertCircle,
     },
     {
       title: 'Horas Extras Não Pagas',
-      description:
-        'Recuperação de valores não pagos por trabalho além da jornada.',
+      description: 'Recuperação de valores não pagos por trabalho além da jornada.',
       icon: Clock,
     },
     {
       title: 'FGTS e Verbas Rescisórias',
-      description:
-        'Regularização de depósitos e pagamentos obrigatórios em atraso.',
+      description: 'Regularização de depósitos e pagamentos obrigatórios em atraso.',
       icon: Scale,
     },
     {
       title: 'Acidente de Trabalho',
-      description:
-        'Indenizações e auxílio para doenças ocupacionais ou acidentes.',
+      description: 'Indenizações e auxílio para doenças ocupacionais ou acidentes.',
       icon: Stethoscope,
     },
   ];
@@ -75,12 +66,9 @@ export const ServicesSection = () => {
           <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
             Nossas Advogadas Trabalhistas
           </h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-brand">
-            COMO PODEMOS TE AJUDAR?
-          </h3>
-          <p className="text-brand/60">
-            Especialistas prontos para defender seus direitos com excelência e
-            dedicação.
+          <h3 className="text-4xl md:text-5xl font-bold text-brand">COMO PODEMOS TE AJUDAR?</h3>
+          <p className="text-brand font-medium">
+            Especialistas prontos para defender seus direitos com excelência e dedicação.
           </p>
         </div>
 
@@ -91,10 +79,8 @@ export const ServicesSection = () => {
                 <div className="w-14 h-14 bg-accent/50 rounded-xl flex items-center justify-center text-primary mb-6">
                   <service.icon size={28} />
                 </div>
-                <h4 className="text-xl font-bold text-brand mb-3 leading-tight">
-                  {service.title}
-                </h4>
-                <p className="text-brand/60 text-sm leading-relaxed">
+                <h4 className="text-xl font-bold text-brand mb-3 leading-tight">{service.title}</h4>
+                <p className="text-brand font-medium text-sm leading-relaxed">
                   {service.description}
                 </p>
               </div>

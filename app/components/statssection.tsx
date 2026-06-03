@@ -4,7 +4,7 @@ export const StatsSection = () => {
     { label: 'Clientes Ativos', value: '+300' },
     { label: 'Ações Protocoladas', value: '+700' },
     {
-      label: 'Avaliações no Google',
+      label: '230+ Avaliações no Google',
       value: '⭐ 5.0',
     },
   ];

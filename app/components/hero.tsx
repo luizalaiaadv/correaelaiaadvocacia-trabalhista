@@ -33,24 +33,26 @@ export const Hero = () => {
             EM <span className="font-bold text-primary">BELO HORIZONTE</span>
           </h1>
 
-          <p className="text-sm md:text-base text-brand/80 max-w-lg leading-relaxed font-medium">
-            Acidente de Trabalho, Recuperar Horas Extras, FGTS, Rescisão Indevida e outros direitos
-            — consulta gratuita, sem risco para você.
-          </p>
+          <div className="rounded-2xl p-2 backdrop-blur-sm sm:bg-white/30">
+            <p className="text-sm md:text-base text-brand/80 max-w-lg leading-relaxed font-medium">
+              Acidente de Trabalho, Recuperar Horas Extras, FGTS, Rescisão Indevida e outros
+              direitos — consulta gratuita, sem risco para você.
+            </p>
 
-          <div className="flex flex-wrap gap-x-5 gap-y-2">
-            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
-              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
-              Sem pagamento adiantado
-            </span>
-            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
-              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
-              Referências de clientes satisfeitos
-            </span>
-            <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
-              <CheckCircle2 size={14} className="text-green-600 shrink-0" />
-              Atendimento online ou presencial
-            </span>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 pt-4">
+              <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+                <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+                Sem pagamento adiantado
+              </span>
+              <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+                <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+                Referências de clientes satisfeitos
+              </span>
+              <span className="flex items-center gap-1.5 text-xs text-brand/70 font-medium">
+                <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+                Atendimento online ou presencial
+              </span>
+            </div>
           </div>
 
           <div className="space-y-4">
