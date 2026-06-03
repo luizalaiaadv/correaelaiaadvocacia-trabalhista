@@ -22,9 +22,9 @@ export const PricingSection = () => {
             message="Olá! Gostaria de agendar minha consulta gratuita e entender meus direitos."
             label="pricing_cta"
             ariaLabel="Falar agora com um advogado no WhatsApp"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-full shadow-lg hover:bg-white/90 transition-all focus:ring-4 focus:ring-white/20 outline-none animate-whatsapp-white"
+            className="uppercase hover:scale-105 inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-[#25d366]/20 outline-none"
           >
-            FALE COM UM ADVOGADO
+            quero agendar meu atendimento
           </WhatsAppLink>
           <p className="text-sm opacity-70 italic">
             Primeira consulta para análise de viabilidade gratuita.

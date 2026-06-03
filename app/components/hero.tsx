@@ -59,9 +59,9 @@ export const Hero = () => {
                 message="Olá! Vi o anúncio e gostaria de uma consulta GRATUITA sobre meus direitos trabalhistas."
                 label="hero_cta"
                 ariaLabel="Falar agora com um advogado no WhatsApp"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-all focus:ring-4 focus:ring-primary/20 outline-none animate-whatsapp-brown"
+                className="uppercase hover:scale-105 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-[#25d366]/20 outline-none"
               >
-                FALE COM UM ADVOGADO
+                quero falar com a advogada
               </WhatsAppLink>
               <a
                 href="#servicos"
