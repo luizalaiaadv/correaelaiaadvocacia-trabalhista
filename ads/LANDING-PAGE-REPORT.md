@@ -28,8 +28,8 @@ SCORE GERAL:      █████████░  69/100
 
 | Elemento          | Status   | Detalhe                                                                                |
 | ----------------- | -------- | -------------------------------------------------------------------------------------- |
-| H1                | ✅ EXATO | "ADVOGADO TRABALHISTA EM BELO HORIZONTE" — match perfeito para palavra-chave principal |
-| Keyword no corpo  | ✅       | BH, advogado trabalhista, horas extras, FGTS, rescisão — todos presentes               |
+| H1                | ✅ EXATO | "ADVOGADA TRABALHISTA EM BELO HORIZONTE" — match perfeito para palavra-chave principal |
+| Keyword no corpo  | ✅       | BH, advogada trabalhista, horas extras, FGTS, rescisão — todos presentes               |
 | CTA do anúncio    | ✅       | "Fale com um advogado" → WhatsApp direto — ação clara                                  |
 | Serviços listados | ✅       | 9 serviços cobrem o universo de buscas trabalhistas                                    |
 
@@ -105,7 +105,7 @@ SCORE GERAL:      █████████░  69/100
 | `ratingCount: '3'` no schema — muito baixo         | 🔴 ALTO  | Google exibe estrelas nos resultados orgânicos e pode considerar insuficiente. Aumentar para pelo menos 10+ avaliações reais                              |
 | Nenhum badge Google "Avaliações" visível na página | 🔴 ALTO  | "5.0 no Google" aparece apenas no StatsSection como número. Sem link, sem logo do Google, sem contagem visível — parece inventado para o visitante cético |
 | Sem certificação OAB visual/badge                  | 🟡 MÉDIO | O número OAB/MG aparece em texto pequeno. Um badge visual da OAB aumenta confiança                                                                        |
-| Apenas 3 depoimentos                               | 🟡 MÉDIO | Para advogado trabalhista, 3 é insuficiente. Prospects querem ver volume de casos resolvidos                                                              |
+| Apenas 3 depoimentos                               | 🟡 MÉDIO | Para advogada trabalhista, 3 é insuficiente. Prospects querem ver volume de casos resolvidos                                                              |
 
 ---
 

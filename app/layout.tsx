@@ -20,14 +20,14 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Correa & Laia Advocacia | Advogado Trabalhista em BH',
+  title: 'Correa & Laia Advocacia | Advogada Trabalhista em BH',
   description:
     'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador. Agende sua consulta com Correa & Laia Advocacia.',
   keywords: [
-    'Advogado Trabalhista',
+    'Advogada Trabalhista',
     'Belo Horizonte',
     'BH',
-    'Advogado Trabalhista',
+    'Advogada Trabalhista',
     'Direitos do Trabalhador',
     'Correa & Laia Advocacia',
     'Luiza Laia',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Correa & Laia Advocacia' }],
   openGraph: {
     type: 'website',
-    title: 'Correa & Laia Advocacia | Advogado Trabalhista em BH',
+    title: 'Correa & Laia Advocacia | Advogada Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
     url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Correa & Laia Advocacia | Advogado Trabalhista em BH',
+    title: 'Correa & Laia Advocacia | Advogada Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
     images: [
@@ -77,12 +77,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
       <head>
-        <link href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link
-          href="https://lh3.googleusercontent.com"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://lh3.googleusercontent.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
 
         {/* Schema JSON-LD: LocalBusiness + LegalService */}

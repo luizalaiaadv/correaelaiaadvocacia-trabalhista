@@ -13,50 +13,36 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState('inicio');
 
   useEffect(() => {
-    const sectionIds = [
-      'inicio',
-      'servicos',
-      'sobre',
-      'depoimentos',
-      'faq',
-      'localizacao',
-    ];
+    const sectionIds = ['inicio', 'servicos', 'sobre', 'depoimentos', 'faq', 'localizacao'];
 
-    let positions: { id: string; top: number }[] = [];
+    // IntersectionObserver: zero getBoundingClientRect on scroll.
+    // rootMargin strips the navbar height from the top and keeps only the
+    // top 40 % of the remaining viewport as the "active" detection zone —
+    // tight enough that only one section fires at a time.
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: '-90px 0px -60% 0px', threshold: 0 }
+    );
 
-    const cachePositions = () => {
-      positions = sectionIds
-        .map((id) => {
-          const el = document.getElementById(id);
-          if (!el) return null;
-          return { id, top: el.getBoundingClientRect().top + window.scrollY };
-        })
-        .filter(Boolean) as { id: string; top: number }[];
-    };
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
 
-    cachePositions();
-
-    const ro = new ResizeObserver(cachePositions);
-    ro.observe(document.body);
-    window.addEventListener('resize', cachePositions, { passive: true });
-
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-      const trigger = window.scrollY + 90;
-      let current = positions[0]?.id ?? 'inicio';
-      for (const { id, top } of positions) {
-        if (trigger >= top) current = id;
-      }
-      setActiveSection(current);
-    };
-
+    // window.scrollY is layout-free — keep only for isScrolled flag
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
     return () => {
-      ro.disconnect();
+      io.disconnect();
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', cachePositions);
     };
   }, []);
 
@@ -75,7 +61,7 @@ export const Navbar = () => {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4',
         isScrolled
           ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
-          : 'bg-white/40 backdrop-blur-md shadow-sm py-3',
+          : 'bg-white/40 backdrop-blur-md shadow-sm py-3'
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -85,7 +71,9 @@ export const Navbar = () => {
               src={imgLogo}
               alt="Correa & Laia Advocacia"
               priority
-              style={{ width: '76px', height: 'auto' }}
+              width={76}
+              height={56}
+              sizes="76px"
             />
           </div>
         </div>
@@ -98,7 +86,7 @@ export const Navbar = () => {
               href={link.href}
               className={cn(
                 'text-sm font-medium transition-all duration-300 hover:text-primary relative py-1',
-                activeSection === link.id ? 'text-primary' : 'text-brand',
+                activeSection === link.id ? 'text-primary' : 'text-brand'
               )}
             >
               {link.name}
@@ -138,9 +126,7 @@ export const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
               className={cn(
                 'relative font-medium transition-colors py-2 pl-4',
-                activeSection === link.id
-                  ? 'text-primary bg-primary/5'
-                  : 'text-brand',
+                activeSection === link.id ? 'text-primary bg-primary/5' : 'text-brand'
               )}
             >
               <span

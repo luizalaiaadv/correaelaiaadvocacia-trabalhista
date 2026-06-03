@@ -1,5 +1,5 @@
 const PHONE = '5531999471983';
-const message = 'Olá! Gostaria de falar com um advogado trabalhista.';
+const message = 'Olá! Gostaria de falar com uma advogada trabalhista.';
 
 export const FloatingWhatsApp = () => {
   const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;

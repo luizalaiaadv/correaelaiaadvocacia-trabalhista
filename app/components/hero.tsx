@@ -29,14 +29,13 @@ export const Hero = () => {
           </span>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-normal text-brand leading-[1.2] uppercase tracking-tight">
-            ADVOGADO TRABALHISTA <br />
+            ADVOGADA TRABALHISTA <br />
             EM <span className="font-bold text-primary">BELO HORIZONTE</span>
           </h1>
 
           <p className="text-sm md:text-base text-brand/80 max-w-lg leading-relaxed font-medium">
-            Seu advogado trabalhista em BH para recuperar horas extras, FGTS,
-            rescisão indevida e outros direitos — consulta gratuita, sem risco
-            para você.
+            Acidente de Trabalho, Recuperar Horas Extras, FGTS, Rescisão Indevida e outros direitos
+            — consulta gratuita, sem risco para você.
           </p>
 
           <div className="flex flex-wrap gap-x-5 gap-y-2">

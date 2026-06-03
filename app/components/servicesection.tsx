@@ -73,7 +73,7 @@ export const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <h2 className="text-sm font-bold text-primary uppercase tracking-[0.3em]">
-            Nosso Advogado Trabalhista
+            Nossas Advogadas Trabalhistas
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-brand">
             COMO PODEMOS TE AJUDAR?
