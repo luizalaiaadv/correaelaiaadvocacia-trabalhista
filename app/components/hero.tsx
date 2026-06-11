@@ -25,7 +25,7 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 w-full z-10">
         <div className="max-w-2xl space-y-6 md:space-y-8">
           <span className="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-            Consulta Gratuita
+            ONLINE
           </span>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-normal text-brand leading-[1.2] uppercase tracking-tight">
@@ -36,7 +36,7 @@ export const Hero = () => {
           <div className="rounded-2xl p-2 backdrop-blur-sm sm:bg-white/30">
             <p className="text-sm md:text-base text-brand/80 max-w-lg leading-relaxed font-medium">
               Acidente de Trabalho, Recuperar Horas Extras, FGTS, Rescisão Indevida e outros
-              direitos — consulta gratuita, sem risco para você.
+              direitos.
             </p>
 
             <div className="flex flex-wrap gap-x-5 gap-y-2 pt-4">
@@ -58,10 +58,10 @@ export const Hero = () => {
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <WhatsAppLink
-                message="Olá! Vi o anúncio e gostaria de uma consulta GRATUITA sobre meus direitos trabalhistas."
+                message="Olá! Vi o anúncio e gostaria de uma consulta sobre meus direitos trabalhistas."
                 label="hero_cta"
                 ariaLabel="Falar agora com um advogado no WhatsApp"
-                className="uppercase hover:scale-105 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-[#25d366]/20 outline-none"
+                className="uppercase hover:scale-105 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-whatsapp/20 outline-none"
               >
                 quero falar com a advogada
               </WhatsAppLink>

@@ -1,7 +1,6 @@
 import {
   Briefcase,
   FileText,
-  AlertCircle,
   ShieldAlert,
   Clock,
   TrendingUp,
@@ -12,6 +11,11 @@ import {
 
 export const ServicesSection = () => {
   const services = [
+    {
+      title: 'Acidente de Trabalho',
+      description: 'Indenizações e auxílio para doenças ocupacionais ou acidentes.',
+      icon: Stethoscope,
+    },
     {
       title: 'Pejotização / Vínculo Empregatício',
       description: 'Reconhecimento de vínculo para quem trabalha como PJ mas possui subordinação.',
@@ -38,11 +42,6 @@ export const ServicesSection = () => {
       icon: ShieldAlert,
     },
     {
-      title: 'Assédio Moral e Sexual',
-      description: 'Defesa rigorosa contra abusos e situações constrangedoras no trabalho.',
-      icon: AlertCircle,
-    },
-    {
       title: 'Horas Extras Não Pagas',
       description: 'Recuperação de valores não pagos por trabalho além da jornada.',
       icon: Clock,
@@ -51,11 +50,6 @@ export const ServicesSection = () => {
       title: 'FGTS e Verbas Rescisórias',
       description: 'Regularização de depósitos e pagamentos obrigatórios em atraso.',
       icon: Scale,
-    },
-    {
-      title: 'Acidente de Trabalho',
-      description: 'Indenizações e auxílio para doenças ocupacionais ou acidentes.',
-      icon: Stethoscope,
     },
   ];
 

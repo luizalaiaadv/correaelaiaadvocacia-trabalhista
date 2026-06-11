@@ -63,10 +63,10 @@ export const HowItWorks = () => {
 
       <div className="text-center mt-16">
         <WhatsAppLink
-          message="Olá! Quero entender como funciona o processo. Gostaria de agendar uma consulta gratuita."
+          message="Olá! Quero entender como funciona o processo. Gostaria de agendar uma consulta."
           label="how_it_works_cta"
           ariaLabel="Quero resolver meu caso trabalhista"
-          className="uppercase hover:scale-105 inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-[#25d366]/20 outline-none"
+          className="uppercase hover:scale-105 inline-flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-whatsapp/20 outline-none"
         >
           quero resolver meu caso trabalhista
         </WhatsAppLink>

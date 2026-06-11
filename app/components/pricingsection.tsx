@@ -19,15 +19,15 @@ export const PricingSection = () => {
         </p>
         <div className="space-y-6">
           <WhatsAppLink
-            message="Olá! Gostaria de agendar minha consulta gratuita e entender meus direitos."
+            message="Olá! Gostaria de agendar minha consulta e entender meus direitos."
             label="pricing_cta"
             ariaLabel="Falar agora com um advogado no WhatsApp"
-            className="uppercase hover:scale-105 inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-[#25d366]/20 outline-none"
+            className="uppercase hover:scale-105 inline-flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-bold rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all focus:ring-4 focus:ring-whatsapp/20 outline-none"
           >
             quero agendar meu atendimento
           </WhatsAppLink>
           <p className="text-sm opacity-70 italic">
-            Primeira consulta para análise de viabilidade gratuita.
+            Primeira consulta para análise de viabilidade.
           </p>
         </div>
       </div>
