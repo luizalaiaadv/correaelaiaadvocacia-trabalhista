@@ -43,12 +43,12 @@ export const metadata: Metadata = {
     title: 'Correa & Laia Advocacia | Advogada Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
-    url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
+    url: 'https://trabalhista.correaelaiaadvocacia.com/',
     siteName: 'Correa & Laia Advocacia',
     locale: 'pt_BR',
     images: [
       {
-        url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
+        url: 'https://trabalhista.correaelaiaadvocacia.com/luizas.webp',
         width: 341,
         height: 512,
         alt: 'Dra. Luiza Laia e Dra. Luiza Corrêa - Correa & Laia Advocacia',
@@ -60,20 +60,14 @@ export const metadata: Metadata = {
     title: 'Correa & Laia Advocacia | Advogada Trabalhista em BH',
     description:
       'Especialistas em Direito do Trabalho em Belo Horizonte. Defesa técnica e humanizada dos direitos do trabalhador.',
-    images: [
-      'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
-    ],
+    images: ['https://trabalhista.correaelaiaadvocacia.com/luizas.webp'],
   },
   alternates: {
-    canonical: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
+    canonical: 'https://trabalhista.correaelaiaadvocacia.com/',
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${cinzel.variable} ${montserrat.variable}`}>
       <head>
@@ -92,10 +86,9 @@ export default function RootLayout({
               name: 'Correa & Laia Advocacia',
               description:
                 'Escritório de advocacia trabalhista em Belo Horizonte especializado em defender os direitos de trabalhadores em MG.',
-              url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
-              image:
-                'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista/luizas.webp',
-              logo: 'https://www.trabalhista.correaelaiaadvocacia.com/logo.webp',
+              url: 'https://trabalhista.correaelaiaadvocacia.com/',
+              image: 'https://trabalhista.correaelaiaadvocacia.com/luizas.webp',
+              logo: 'https://trabalhista.correaelaiaadvocacia.com/logo.webp',
               telephone: '+55-31-99947-1983',
               email: 'contato@correalaiadvocacia.com.br',
               address: {
@@ -208,7 +201,7 @@ export default function RootLayout({
                 worksFor: {
                   '@type': 'LegalService',
                   name: 'Correa & Laia Advocacia',
-                  url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
+                  url: 'https://trabalhista.correaelaiaadvocacia.com/',
                 },
                 address: {
                   '@type': 'PostalAddress',
@@ -229,7 +222,7 @@ export default function RootLayout({
                 worksFor: {
                   '@type': 'LegalService',
                   name: 'Correa & Laia Advocacia',
-                  url: 'https://www.trabalhista.correaelaiaadvocacia.com/trabalhista',
+                  url: 'https://trabalhista.correaelaiaadvocacia.com/',
                 },
                 address: {
                   '@type': 'PostalAddress',

@@ -1,6 +1,6 @@
 # Landing Page Report — Correa & Laia Advocacia
 
-**URL:** https://www.trabalhista.correaelaiaadvocacia.com/trabalhista  
+**URL:** https://trabalhista.correaelaiaadvocacia.com/  
 **Data:** 2026-05-27  
 **Tipo de campanha:** Google Ads Search + Meta Ads (serviço local, advocacia trabalhista BH)
 
