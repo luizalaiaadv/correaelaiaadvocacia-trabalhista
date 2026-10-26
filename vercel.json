@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "trabalhista.correaelaiaadvocacia.com"
+          "value": "www.trabalhista.correaelaiaadvocacia.com"
         }
       ],
       "destination": "https://trabalhista.correaelaiaadvocacia.com/:path*",
